@@ -108,7 +108,7 @@ Now let's fix your MAC address (ROM)
 
 * With BIOS F26 and PC3600 RAM, I get 2288/10111 in GeekBench 6.20.   
 * A typical M2 base $499 [Edu] mini is (Geekbench) 2629/9733, so the base i5-12400F (PC4400 RAM) is about 87% of the M2's speed per core, and about 104% of the M2 (mini) speed with all cores compared.  
-* Cinebench scores are inline with what I see online.  ![274724934-aa847776-4faf-4ab0-9878-d29f6c8ddcae](https://user-images.githubusercontent.com/4536776/274724934-aa847776-4faf-4ab0-9878-d29f6c8ddcae.png)
+* Cinebench scores are close with what I see online.  ![274724934-aa847776-4faf-4ab0-9878-d29f6c8ddcae](https://user-images.githubusercontent.com/4536776/274724934-aa847776-4faf-4ab0-9878-d29f6c8ddcae.png)
 
 **Addendum:  6900 Configuration**
 
