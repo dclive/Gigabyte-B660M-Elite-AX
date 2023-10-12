@@ -127,8 +127,9 @@ Save, reboot, and your 6900 will be enabled.  Note: this only works with a B660M
 
 ![209982583-cfde040a-d2bb-46a3-b8dd-ef810f555fc6](https://user-images.githubusercontent.com/4536776/209982583-cfde040a-d2bb-46a3-b8dd-ef810f555fc6.png)
 
-**If you don't have a 6900XT, you should delete the above items.**  
+**If you don't have a 6900XT, you should remove the above items.**  
 
-**Addendum:  OC90+**
+**Addendum:  OC95+**
 
 - Use OCAT to update to the latest OpenCore.  No issues to report.  DO THIS.  It's worth staying current and fully fixed.  OC95 is current in the zip and works great.  Read a simple guide I wrote here for details on howto:  https://github.com/dclive/Howto--Update-OpenCore-with-OCAT
+
