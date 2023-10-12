@@ -21,7 +21,7 @@ Most content was sourced from my Asrock B660M HDV writeup.  Please see that for 
 
 **Hardware**
 
-* Gigabyte Aorus Elite AX DDR4 works well in MacOS Sonoma.  It's safe to update, and all testing will only include that BIOS (or later) going forward.  After the flash, load all BIOS defaults.  Then disable GPU ReBar, disable serial, disable secure boot, disable CFGLock, set XMP to on (if your RAM is capable), and ... I think that's all that's required in BIOS.  
+* Gigabyte Aorus Elite AX DDR4 1.x with BIOS F26 works well in MacOS Sonoma.  It's safe to update, and all testing will only include that BIOS (or later) going forward.  After the flash, load all BIOS defaults.  Then disable GPU ReBar, disable serial, disable secure boot, disable CFGLock, set XMP to on (if your RAM is capable), and ... I think that's all that's required in BIOS.  
 * Intel i5-12400F
 * AMD RX 5700 GPU or AMD RX 6800XT GPU  [An AMD GPU is required regardless of which 12th gen CPU you use, no exceptions]
   * Most typical, RX470, RX480, RX570, RX580, RX590, Vega 56, Vega 64, RX 5700, RX6600, RX6600XT, RX6800, RX6800XT, RX6900XT will all work.  Some other variants (some RX560, for example) will work also, but you should google for more details before buying.  If you buy a 6900XT and it's the XTXH variant (you'll know because it will work, but won't be GPU-accellerated) please see the appropriate section far below.  I've left the 6900XT "plugs" in place; to remove them simply uncheck the features in OCAT; see far below.
@@ -30,7 +30,7 @@ Most content was sourced from my Asrock B660M HDV writeup.  Please see that for 
 * 2TB NVME [ADATA 8200 Pro]
 * Corsair RM650x
 * PowerMac G5 Case, LaserHive MATX 120 modifications [https://thelaserhive.com/product/g5-matx-120-kit/]. :  Note:  I have no front panel USB3 ports in my case.  You'll need to handle mapping your own USB3 (internal) ports if this is important to you / if you have a different case.  Use USBToolbox in Windows for the simplest experience.  Note that process will have TWO kexts you have to put into your Kexts folder, not one.  
-* The integrated Intel wireless module is fully working within MacOS Sonoma.
+* The integrated Intel wireless & bluetooth module is fully working within MacOS Sonoma.
 
 **Working**
 
@@ -124,7 +124,7 @@ And it must have two entries (on the right) associated with it:
 
 ​	model	String	Radeon RX 6900 XT (XTXH)-DCL			(or whatever you'd like to call your 6900)
 
-Save, reboot, and your 6900 will be enabled.  Note: this only works with a B660M-HDV motherboard.  Other motherboards may label their bridge chips or other bits differently.  
+Save, reboot, and your 6900 will be enabled.  Note: Other motherboards may label their bridge chips or other bits differently.  
 
 ![209982583-cfde040a-d2bb-46a3-b8dd-ef810f555fc6](https://user-images.githubusercontent.com/4536776/209982583-cfde040a-d2bb-46a3-b8dd-ef810f555fc6.png)
 
