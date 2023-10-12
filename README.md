@@ -1,4 +1,4 @@
-# Gigabyte_B660M-Elite-AX
+# Gigabyte Aorus B660M Elite AX DDR4 1.x
 Hackintosh Information for Gigabyte B660M Elite AX motherboard and MacOS 14+
 
 ****Hackintosh EFI Information for Gigabyte B660M Elite AX and i5-12400F - Fully working, OC95+, MacOS14.0+****
@@ -11,13 +11,9 @@ BIOS Version used:  F26, Sept 12, 2023: https://www.gigabyte.com/Motherboard/B66
 
 Initial release, 10.12.2023
 
-PC3600 RAM & BIOS F26: 
-
-![274719371-98f56e37-ad5d-49e4-89c2-887efaaee3a1](https://user-images.githubusercontent.com/4536776/274719371-98f56e37-ad5d-49e4-89c2-887efaaee3a1.png)
-
 **Credits**
 
-Most content was sourced from my Asrock B660M HDV writeup.  Please see that for background details.
+Most content was sourced from my Asrock B660M HDV writeup.  Please see that for background details.  New stuff:  USB mapping.  Intel BT/Wifi.  Updates to OC95.  
 
 **Tested macOS**
 
@@ -107,6 +103,8 @@ Now let's fix your MAC address (ROM)
 * Otherwise, please leave comments/issues here. 
 
 **Benchmark Expectations**
+
+![274719371-98f56e37-ad5d-49e4-89c2-887efaaee3a1](https://user-images.githubusercontent.com/4536776/274719371-98f56e37-ad5d-49e4-89c2-887efaaee3a1.png)
 
 * With BIOS F26 and PC3600 RAM, I get 2288/10111 in GeekBench 6.20.   
 * A typical M2 base $499 [Edu] mini is (Geekbench) 2629/9733, so the base i5-12400F (PC4400 RAM) is about 87% of the M2's speed per core, and about 104% of the M2 (mini) speed with all cores compared.  
