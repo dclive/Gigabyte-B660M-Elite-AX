@@ -26,7 +26,7 @@ Most content was sourced from my Asrock B660M HDV writeup.  Please see that for 
 * AMD RX 5700 GPU or AMD RX 6800XT GPU  [An AMD GPU is required regardless of which 12th gen CPU you use, no exceptions]
   * Most typical, RX470, RX480, RX570, RX580, RX590, Vega 56, Vega 64, RX 5700, RX6600, RX6600XT, RX6800, RX6800XT, RX6900XT will all work.  Some other variants (some RX560, for example) will work also, but you should google for more details before buying.  If you buy a 6900XT and it's the XTXH variant (you'll know because it will work, but won't be GPU-accellerated) please see the appropriate section far below.  I've left the 6900XT "plugs" in place; to remove them simply uncheck the features in OCAT; see far below.
 
-* 32GB RAM PC4400 [2 x 16GB DIMMs]: after flashing to F26 I could no longer run this reliably at PC4400 and so flipped to PC3600.  Surprisingly, my benchmark scores generally went up.
+* 32GB RAM PC4400 [2 x 16GB DIMMs]: after flashing to F26 I could no longer run this reliably at PC4400 and so flipped to PC3600.  My benchmark scores generally went up.
 * 2TB NVME [ADATA 8200 Pro]
 * Corsair RM650x
 * PowerMac G5 Case, LaserHive MATX 120 modifications [https://thelaserhive.com/product/g5-matx-120-kit/]. :  Note:  I have no front panel USB3 ports in my case.  You'll need to handle mapping your own USB3 (internal) ports if this is important to you / if you have a different case.  Use USBToolbox in Windows for the simplest experience.  Note that process will have TWO kexts you have to put into your Kexts folder, not one.  
