@@ -21,7 +21,7 @@ Most content was sourced from my Asrock B660M HDV writeup.  Please see that for 
 
 **Hardware**
 
-* Gigabyte Aorus Elite AX DDR4 works well in MacOS Sonoma.  It's safe to update, and all testing will only include that BIOS (or later) going forward.  After the flash, load all BIOS defaults.  Then disable GPU ReBar, disable serial, disable secure boot, disable CFGLock, set XMP to on (if your RAM is capable), and ... I think that's all that's required in BIOS.  I do **not** suggest changing any wattage limits.  The above graphic of my speed is superior to previous test runs where I changed BIOS options to increase wattage limits; it appears with this motherboard removing those wattage limits is a bad idea.  **I welcome comments and tests on this in the 'Issues' section of this Github; please add your findings.**
+* Gigabyte Aorus Elite AX DDR4 works well in MacOS Sonoma.  It's safe to update, and all testing will only include that BIOS (or later) going forward.  After the flash, load all BIOS defaults.  Then disable GPU ReBar, disable serial, disable secure boot, disable CFGLock, set XMP to on (if your RAM is capable), and ... I think that's all that's required in BIOS.  
 * Intel i5-12400F
 * AMD RX 5700 GPU or AMD RX 6800XT GPU  [An AMD GPU is required regardless of which 12th gen CPU you use, no exceptions]
   * Most typical, RX470, RX480, RX570, RX580, RX590, Vega 56, Vega 64, RX 5700, RX6600, RX6600XT, RX6800, RX6800XT, RX6900XT will all work.  Some other variants (some RX560, for example) will work also, but you should google for more details before buying.  If you buy a 6900XT and it's the XTXH variant (you'll know because it will work, but won't be GPU-accellerated) please see the appropriate section far below.  I've left the 6900XT "plugs" in place; to remove them simply uncheck the features in OCAT; see far below.
@@ -108,6 +108,7 @@ Now let's fix your MAC address (ROM)
 
 * With BIOS F26 and PC3600 RAM, I get 2288/10111 in GeekBench 6.20.   
 * A typical M2 base $499 [Edu] mini is (Geekbench) 2629/9733, so the base i5-12400F (PC4400 RAM) is about 87% of the M2's speed per core, and about 104% of the M2 (mini) speed with all cores compared.  
+* Cinebench scores are inline with what I see online.  ![274724934-aa847776-4faf-4ab0-9878-d29f6c8ddcae](https://user-images.githubusercontent.com/4536776/274724934-aa847776-4faf-4ab0-9878-d29f6c8ddcae.png)
 
 **Addendum:  6900 Configuration**
 
