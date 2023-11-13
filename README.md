@@ -5,11 +5,11 @@ Hackintosh Information for Gigabyte B660M Elite AX motherboard and MacOS 14+
 
 Motherboard:  https://www.gigabyte.com/Motherboard/B660M-AORUS-ELITE-AX-DDR4-rev-1x#kf
 
-BIOS Version used:  F26, Sept 12, 2023: https://www.gigabyte.com/Motherboard/B660M-AORUS-ELITE-AX-DDR4-rev-1x/support#support-dl-bios
+BIOS Version used:  F28a, https://download.gigabyte.com/FileList/BIOS/mb_bios_b660m-a-elite-ax-ddr4_8aadl044_f28a.zip?v=d0898b2b0ef501d98152874a982b7331 or https://www.gigabyte.com/Motherboard/B660M-AORUS-ELITE-AX-DDR4-rev-1x/support#support-dl-bios, from October 19 2023.  
 
 **Changes**
 
-Initial release, 10.12.2023
+Initial release, 10.12.2023; mild changes November 12, 2023 with newer BIOS confirmation and OC96 comment.  
 
 **Credits**
 
@@ -21,7 +21,7 @@ Most content was sourced from my Asrock B660M HDV writeup.  Please see that for 
 
 **Hardware**
 
-* Gigabyte Aorus Elite AX DDR4 1.x with BIOS F26 works well in MacOS Sonoma.  It's safe to update, and all testing will only include that BIOS (or later) going forward.  After the flash, load all BIOS defaults.  Then disable GPU ReBar, disable serial, disable secure boot, disable CFGLock, set XMP to on (if your RAM is capable), and ... I think that's all that's required in BIOS.  
+* Gigabyte Aorus Elite AX DDR4 1.x with BIOS F28a works well in MacOS Sonoma.  It's safe to update, and all testing will only include that BIOS (or later) going forward.  After the flash, load all BIOS defaults.  Then disable GPU ReBar, disable serial, disable secure boot & PTT, disable CFGLock, set XMP to on (if your RAM is capable).  I disable VT-d and motherboard audio, instead focusing on either a USB speaker for audio, or a DisplayPort monitor for audio. 
 * Intel i5-12400F
 * AMD RX 5700 GPU or AMD RX 6800XT GPU  [An AMD GPU is required regardless of which 12th gen CPU you use, no exceptions]
   * Most typical, RX470, RX480, RX570, RX580, RX590, Vega 56, Vega 64, RX 5700, RX6600, RX6600XT, RX6800, RX6800XT, RX6900XT will all work.  Some other variants (some RX560, for example) will work also, but you should google for more details before buying.  If you buy a 6900XT and it's the XTXH variant (you'll know because it will work, but won't be GPU-accellerated) please see the appropriate section far below.  I've left the 6900XT "plugs" in place; to remove them simply uncheck the features in OCAT; see far below.
@@ -35,7 +35,7 @@ Most content was sourced from my Asrock B660M HDV writeup.  Please see that for 
 **Working**
 
 * Bluetooth, Wi-Fi and LOM ethernet
-* AMD GPU HDMI & DP Audio;motherboard 3.5MM audio in/out is untested
+* AMD GPU DP Audio;motherboard 3.5MM audio in/out is untested
 * Sleep / Wake works; mouse / keyboard wakes machine
 * App Store, Time Machine [But to recover, keep track of your USB stick with your serials/MAC Address/etc. embedded in it!]
 * Apple Watch unlock (mostly reliable, not perfect), AirDrop
