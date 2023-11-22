@@ -7,6 +7,8 @@ Motherboard:  https://www.gigabyte.com/Motherboard/B660M-AORUS-ELITE-AX-DDR4-rev
 
 BIOS Version used:  F28a, https://download.gigabyte.com/FileList/BIOS/mb_bios_b660m-a-elite-ax-ddr4_8aadl044_f28a.zip?v=d0898b2b0ef501d98152874a982b7331 or https://www.gigabyte.com/Motherboard/B660M-AORUS-ELITE-AX-DDR4-rev-1x/support#support-dl-bios, from October 19 2023.  
 
+Quick Edit:  28b from November 2023 works fine too.  
+
 **Changes**
 
 Initial release, 10.12.2023; mild changes November 12, 2023 with newer BIOS confirmation and OC96 comment.  
