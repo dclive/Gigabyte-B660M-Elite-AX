@@ -11,7 +11,7 @@ Quick Edit:  28b from November 2023 works fine too.
 
 **Changes**
 
-Initial release, 10.12.2023; mild changes November 12, 2023 with newer BIOS confirmation and OC96 comment.  
+Initial release, 10.12.2023; mild changes November 12, 2023 with newer BIOS confirmation and OC96 comment.  Mild changes Nov 26 with BIOS clarification and MBP14-2023 spec comparison. 
 
 **Credits**
 
@@ -108,8 +108,8 @@ Now let's fix your MAC address (ROM)
 
 ![274719371-98f56e37-ad5d-49e4-89c2-887efaaee3a1](https://user-images.githubusercontent.com/4536776/274719371-98f56e37-ad5d-49e4-89c2-887efaaee3a1.png)
 
-* With BIOS F26 and PC3600 RAM, I get 2288/10111 in GeekBench 6.20.   
-* A typical M2 base $499 [Edu] mini is (Geekbench) 2629/9733, so the base i5-12400F (PC4400 RAM) is about 87% of the M2's speed per core, and about 104% of the M2 (mini) speed with all cores compared.  
+* With BIOS F26 and PC3600 RAM, I get 2288/10111 in GeekBench 6.20.  Later BIOS results were a bit less.  
+* A typical M3 Pro base (the $1849 Edu 14" laptop) is (Geekbench) 3078/14019, so the base i5-12400F (PC3600 RAM, even though it's labelled as PC4400 RAM) is about 74% of the M3 Pro's speed per core, and about 72% of the M3 Pro's speed with all cores compared.  
 * Cinebench scores are close with what I see online.  ![274724934-aa847776-4faf-4ab0-9878-d29f6c8ddcae](https://user-images.githubusercontent.com/4536776/274724934-aa847776-4faf-4ab0-9878-d29f6c8ddcae.png)
 
 **Addendum:  6900 Configuration**
