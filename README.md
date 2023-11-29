@@ -1,7 +1,7 @@
 # Gigabyte Aorus B660M Elite AX DDR4 1.x
 Hackintosh Information for Gigabyte B660M Elite AX motherboard and MacOS 14+
 
-* Note: Updates will slow or cease, as I've acquired a MBP14" M3P that will replace this machine.  I'll leave this up for a bit to help the community, but updates might be slower. 
+* Note: Update frequency will change, as I've acquired a MBP14" M3P that will replace this machine.  I'll leave this up for a bit to help the community, but updates might be slower. 
 
 ****Hackintosh EFI Information for Gigabyte B660M Elite AX and i5-12400F - Fully working, OC95+, MacOS14.0+****
 
