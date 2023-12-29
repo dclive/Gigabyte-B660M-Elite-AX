@@ -134,7 +134,7 @@ Save, reboot, and your 6900 will be enabled.  Note: Other motherboards may label
 
 **If you don't have a 6900XT, you should remove the above items.**  
 
-**Addendum:  OC95+**
+**Addendum:  OC97+**
 
-- Use OCAT to update to the latest OpenCore.  No issues to report.  DO THIS.  It's worth staying current and fully fixed.  OC95 is current in the zip and works great.  Read a simple guide I wrote here for details on howto:  https://github.com/dclive/Howto--Update-OpenCore-with-OCAT.  As of Nov 12, OC96 is fully tested and works great; simply perform the update as described in the link immediately above. 
+- Use OCAT to update to the latest OpenCore.  No issues to report.  DO THIS.  It's worth staying current and fully fixed.  OC95 is current in the zip and works great.  Read a simple guide I wrote here for details on howto:  https://github.com/dclive/Howto--Update-OpenCore-with-OCAT.  As of Dec 28, OC97 is fully tested and works great; simply perform the update as described in the link immediately above. 
 
