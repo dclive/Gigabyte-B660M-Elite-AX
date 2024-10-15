@@ -40,7 +40,6 @@ Most content was sourced from my Asrock B660M HDV writeup.  Please see that for 
 * AMD GPU DP Audio;motherboard 3.5MM audio in/out is untested
 * Sleep / Wake works; mouse / keyboard wakes machine
 * App Store, Time Machine [But to recover, keep track of your USB stick with your serials/MAC Address/etc. embedded in it!]
-* Apple Watch unlock (mostly reliable, not perfect), AirDrop
 * USB port mapping is complete, resulting in iPhone/iPads charging at 2100 ma, and Apple Watch at 1000 ma.  If yours (iPhone, iPad, Apple Watch) doesn't show this rate in About This Mac / System Report / USB, then your USB mapping may not be working correctly.  All 'A' USB ports on this motherboard, USB2 and USB3, are in use and 'active' (working).  USB-C port works, but is only lightly tested.  **The internal USB3 ports are generally NOT USED: if you wish to use them, remap your USB.**  
 
 **Untested**
@@ -52,7 +51,7 @@ Most content was sourced from my Asrock B660M HDV writeup.  Please see that for 
 * Broadly, anything requiring Intel QuickSync / Intel graphics won't work, since the Intel Xe graphics on 11th-12th gen isn't supported by MacOS in any capacity whatsoever - zero functionality, no exceptions.  You must have an AMD GPU with 11th-12th-13th gen Intel CPUs.
 * All video-out ports on the motherboard, as Intel 11th-12th gen (Xe) iGPU isn't supported in MacOS. 
 * Universal Control and related functions don't reliably work for me.  I don't use them and can't help with troubleshooting.  
-* Bluetooth, Wi-Fi do not work; you can try OCLP hacking but I chose not to do this.
+* Bluetooth, Wi-Fi do not work; you can try OCLP hacking but I chose not to do this.  Other things that depend on this (Apple Watch unlock, etc.) now won't work.
 
 **Disabled**
 
