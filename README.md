@@ -1,31 +1,29 @@
 # Gigabyte Aorus B660M Elite AX DDR4 1.x
-Hackintosh Information for Gigabyte B660M Elite AX motherboard and MacOS 14+
+Hackintosh Information for Gigabyte B660M Elite AX motherboard and MacOS 15+
 
 * Note: Update frequency will change, as I've acquired a MBP14" M3P that will replace this machine.  I'll leave this up for a bit to help the community, but updates might be slower. 
 
-****Hackintosh EFI Information for Gigabyte B660M Elite AX and i5-12400F - Fully working, OC95+, MacOS14.0+****
+****Hackintosh EFI Information for Gigabyte B660M Elite AX and i5-12400F - Fully working, OC1.02+, MacOS15.0+****
 
 Motherboard:  https://www.gigabyte.com/Motherboard/B660M-AORUS-ELITE-AX-DDR4-rev-1x#kf
 
-BIOS Version used:  F28a, https://download.gigabyte.com/FileList/BIOS/mb_bios_b660m-a-elite-ax-ddr4_8aadl044_f28a.zip?v=d0898b2b0ef501d98152874a982b7331 or https://www.gigabyte.com/Motherboard/B660M-AORUS-ELITE-AX-DDR4-rev-1x/support#support-dl-bios, from October 19 2023.  
-
-Quick Edit:  28b from November 2023 works fine too.  
+BIOS Version used:  F30, https://www.gigabyte.com/Motherboard/B660M-AORUS-ELITE-AX-DDR4-rev-1x/support#support-dl-bios, from September 2024.  
 
 **Changes**
 
-Initial release, 10.12.2023; mild changes November 12, 2023 with newer BIOS confirmation and OC96 comment.  Mild changes Nov 26 with BIOS clarification and MBP14-2023 spec comparison. 
+Initial release, 10.12.2023; mild changes November 12, 2023 with newer BIOS confirmation and OC96 comment.  Mild changes Nov 26 with BIOS clarification and MBP14-2023 spec comparison.  Mild changes in October 2024 for MacOS 15 and BIOS F30.
 
 **Credits**
 
-Most content was sourced from my Asrock B660M HDV writeup.  Please see that for background details.  New stuff:  USB mapping.  Intel BT/Wifi.  Updates to OC95.  
+Most content was sourced from my Asrock B660M HDV writeup.  Please see that for background details.  New stuff:  USB mapping.  Intel BT/Wifi.  Updates to OC95.  Note:  YOU must update to OC1.02 prior to using.  Keep it updated!  See my OC update guide for help.  
 
 **Tested macOS**
 
-* OC95+ and Sonoma 14.0+ is the only focus of current testing.  
+* OC1.02+ and Sonoma 15.0+ is the only focus of current testing.  
 
 **Hardware**
 
-* Gigabyte Aorus Elite AX DDR4 1.x with BIOS F28b works well in MacOS Sonoma.  It's safe to update, and all testing will only include that BIOS (or later) going forward.  After the flash, load all BIOS defaults.  Then disable GPU ReBar, disable serial, disable secure boot & PTT, disable CFGLock, set XMP to on (if your RAM is capable).  I disable VT-d and motherboard audio, instead focusing on either a USB speaker for audio, or a DisplayPort monitor for audio. 
+* Gigabyte Aorus Elite AX DDR4 1.x with BIOS F30 works well in MacOS.  It's safe to update, and all testing will only include that BIOS (or later) going forward.  After the flash, load all BIOS defaults.  Then disable GPU ReBar, disable serial, disable secure boot & PTT, disable CFGLock, set XMP to on (if your RAM is capable).  I disable VT-d and motherboard audio, instead focusing on either a USB speaker for audio, or a DisplayPort monitor for audio. 
 * Intel i5-12400F
 * AMD RX 5700 GPU or AMD RX 6800XT GPU  [An AMD GPU is required regardless of which 12th gen CPU you use, no exceptions]
   * Most typical, RX470, RX480, RX570, RX580, RX590, Vega 56, Vega 64, RX 5700, RX6600, RX6600XT, RX6800, RX6800XT, RX6900XT will all work.  Some other variants (some RX560, for example) will work also, but you should google for more details before buying.  If you buy a 6900XT and it's the XTXH variant (you'll know because it will work, but won't be GPU-accellerated) please see the appropriate section far below.  I've left the 6900XT "plugs" in place; to remove them simply uncheck the features in OCAT; see far below.
@@ -38,7 +36,7 @@ Most content was sourced from my Asrock B660M HDV writeup.  Please see that for 
 
 **Working**
 
-* Bluetooth, Wi-Fi and LOM ethernet
+* LOM ethernet
 * AMD GPU DP Audio;motherboard 3.5MM audio in/out is untested
 * Sleep / Wake works; mouse / keyboard wakes machine
 * App Store, Time Machine [But to recover, keep track of your USB stick with your serials/MAC Address/etc. embedded in it!]
@@ -54,6 +52,7 @@ Most content was sourced from my Asrock B660M HDV writeup.  Please see that for 
 * Broadly, anything requiring Intel QuickSync / Intel graphics won't work, since the Intel Xe graphics on 11th-12th gen isn't supported by MacOS in any capacity whatsoever - zero functionality, no exceptions.  You must have an AMD GPU with 11th-12th-13th gen Intel CPUs.
 * All video-out ports on the motherboard, as Intel 11th-12th gen (Xe) iGPU isn't supported in MacOS. 
 * Universal Control and related functions don't reliably work for me.  I don't use them and can't help with troubleshooting.  
+* Bluetooth, Wi-Fi do not work; you can try OCLP hacking but I chose not to do this.
 
 **Disabled**
 
@@ -67,7 +66,7 @@ Most content was sourced from my Asrock B660M HDV writeup.  Please see that for 
 
 You will need to do the following: 
 
-* Prepare a USB boot disk for MacOS 14.x installation.  The easiest way is on a real Mac, although gibMacOS may work for you as well.  To follow the much easier Real Mac path, read https://support.apple.com/en-us/HT201372 and follow the directions for MacOS, including the terminal command to write the download to the USB stick.  You'll want to format the USB as HFS+ format, GUID.  The application 'TINU' also can make a bootable USB stick... (https://github.com/ITzTravelInTime/TINU)
+* Prepare a USB boot disk for MacOS 15.x installation.  The easiest way is on a real Mac, although gibMacOS may work for you as well.  To follow the much easier Real Mac path, read https://support.apple.com/en-us/HT201372 and follow the directions for MacOS, including the terminal command to write the download to the USB stick.  You'll want to format the USB as HFS+ format, GUID.  The application 'TINU' also can make a bootable USB stick... (https://github.com/ITzTravelInTime/TINU)
 * Download EFIAgent (https://github.com/headkaze/EFI-Agent) and mount the EFI (ESP) partition for the USB stick you just made.  Using EFIAgent again, "open" the EFI partition so it shows on the Mac desktop.  Note that EFI partitions are typically GRAY in color in EFIAgent.  To find EFIAgent, locate the new icon in the upper right clock area that looks like a circular pie.  ![Screen Shot 2021-09-25 at 7 22 44 PM](https://user-images.githubusercontent.com/4536776/134790066-27597b9e-a37f-47e0-87f5-d3ebbc2af59f.png)
 
  >>  Remember this process for any future EFI partitions you must mount; this is a common procedure.
@@ -81,7 +80,7 @@ You will need to do the following:
 
 Technically, you are now done.  You should be able to boot MacOS using the USB stick, and install MacOS onto your SSD.  That said, I usually suggest configuring it a bit *after* you boot into MacOS for the first time with the right serials and ROM info: 
 
-* Download OCAT https://github.com/ic005k/QtOpenCoreConfig and open it.  Read the tooltips showing what all the icons at the top do.  Update to the latest OCAT version by finding the update button and updating.  Don't continue until you've done this.  Run the latest OCAT version.  As of last edit, OC95 is current and fully working.  Over the course of time further updates will be required.  Become familiar with how to pull the latest OCxx release and KEXT updates from within OCAT 'into' your EFI configuration; you will do this a lot.  
+* Download OCAT https://github.com/ic005k/QtOpenCoreConfig and open it.  Read the tooltips showing what all the icons at the top do.  Update to the latest OCAT version by finding the update button and updating.  Don't continue until you've done this.  Run the latest OCAT version.  As of last edit, OC1.02 is current and fully working.  Over the course of time further updates will be required.  Become familiar with how to pull the latest OCxx release and KEXT updates from within OCAT 'into' your EFI configuration; you will do this a lot.  
 * Open your USB stick's config.plist by using OCAT's OPEN icon.
 * In OCAT, notice the row of icons on the left side.  Go to "PI" on the row. 
 * Let's generate a new serial.  Ensure, under the GENERIC tab, that for "SystemProductName" you have the MacPro7,1.  Then click GENERATE right next to the MacPro7,1 box.  Your serial numbers are now set up.
@@ -101,7 +100,7 @@ Now let's fix your MAC address (ROM)
 * Assuming no other issues, your setup is now complete!   
 * Restart, press the appropriate key at the boot screen so you can choose a boot disk, and boot from the USB stick (select the uEFI option if prompted).  You'll then be able to step through installation of MacOS.  You'll need to format your SSD as APFS or HFS+ (APFS is the new one; use that).  Name the newly formatted SSD something like **MacSSD** so you know that's what you'll boot from in the future.  Then you can start setup.  
 * Once setup is done, use EFIAgent to copy the USB stick's EFI folder, with your serial number modifications, to the SSD's EPS (EFI) partition, and then you'll be able to boot from that disk (and you won't need the USB stick anymore, but keep it forever as a backup!). **Do note**:  Until you've copied the EFI folder from your USB stick to your SSD's EPS (EFI) partition, you must continue to boot into your USB stick before booting into MacOS.  Once you've copied the USB stick's EFI folder to the EPS (EFI) partition on the SSD, then you'll no longer need to use the USB stick to boot, and you'll just boot from the SSD's EPS (EFI) partition. 
-* Versioning on this zipfile is OC95.  Future versions, if required, would have higher numbers so it is easier to see what version you have.  Keep the zipfile (name, at least) around so you know what version you have.  
+* Versioning on this zipfile is OC95.  Future versions, if required, would have higher numbers so it is easier to see what version you have.  Keep the zipfile (name, at least) around so you know what version you have. **You need to update to the latest OpenCore, currently 1.02, prior to use with MacOS 15.**   
 * You can clean up logs and logging / bootup, if you wish, once you have everything sorted.  Doritania's guide has a post-install cleanup section with good details on that.  In the zip, logging is fully enabled, so that if there's a problem you can take a video of the screen on your phone and troubleshoot based on that.
 * Use OCAuxiliaryTools to update to later OpenCore releases.  Use MacOS's built-in update mechanism to update MacOS releases.  
 * Otherwise, please leave comments/issues here. 
@@ -134,7 +133,7 @@ Save, reboot, and your 6900 will be enabled.  Note: Other motherboards may label
 
 **If you don't have a 6900XT, you should remove the above items.**  
 
-**Addendum:  OC97+**
+**Addendum:  OC1.02+**
 
-- Use OCAT to update to the latest OpenCore.  No issues to report.  DO THIS.  It's worth staying current and fully fixed.  OC95 is current in the zip and works great.  Read a simple guide I wrote here for details on howto:  https://github.com/dclive/Howto--Update-OpenCore-with-OCAT.  As of Dec 28, OC97 is fully tested and works great; simply perform the update as described in the link immediately above. 
+- Use OCAT to update to the latest OpenCore.  No issues to report.  DO THIS.  It's worth staying current and fully fixed.  OC95 is current in the zip and works great with older MacOS releases, and OC1.02+ is best for MacOS15+.  Read a simple guide I wrote here for details on howto:  https://github.com/dclive/Howto--Update-OpenCore-with-OCAT.  As of October 2024, OC1.02 is fully tested and works great; simply perform the update as described in the link immediately above. 
 
