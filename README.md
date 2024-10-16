@@ -106,11 +106,12 @@ Now let's fix your MAC address (ROM)
 
 **Benchmark Expectations**
 
-![274719371-98f56e37-ad5d-49e4-89c2-887efaaee3a1](https://user-images.githubusercontent.com/4536776/274719371-98f56e37-ad5d-49e4-89c2-887efaaee3a1.png)
+![img](https://private-user-images.githubusercontent.com/4536776/377123674-a5fcc800-c0b5-461e-a7cb-cd5e32e4d027.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjkwOTI4OTQsIm5iZiI6MTcyOTA5MjU5NCwicGF0aCI6Ii80NTM2Nzc2LzM3NzEyMzY3NC1hNWZjYzgwMC1jMGI1LTQ2MWUtYTdjYi1jZDVlMzJlNGQwMjcucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MTAxNiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDEwMTZUMTUyOTU0WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9OWYxMTA4ZDY0Yzk5MjBiMWUzZTBhODdhYmNlNTY5ZDRhN2JiNzdlOTViNmIwM2U0NzBlNzhlZWQ3YTVlODYxYSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.0LGq2nM5AZM-v_dYIrd-bDolcLaqyAKnzOCRmA5EJI4)
 
-* With BIOS F26 and PC3600 RAM, I get 2288/10111 in GeekBench 6.20.  Later BIOS results were a bit less.  
-* A typical M3 Pro base (the $1849 Edu 14" laptop) is (Geekbench) 3078/14019, so the base i5-12400F (PC3600 RAM, even though it's labelled as PC4400 RAM) is about 74% of the M3 Pro's speed per core, and about 72% of the M3 Pro's speed with all cores compared.  
-* Cinebench scores are close with what I see online.  ![274724934-aa847776-4faf-4ab0-9878-d29f6c8ddcae](https://user-images.githubusercontent.com/4536776/274724934-aa847776-4faf-4ab0-9878-d29f6c8ddcae.png)
+* With BIOS F30 and PC3600 RAM, in MacOS15.01, I get 2224/9656 in GeekBench 6.30.    
+* A typical M3 Pro MBP 14" base (the $1849 Edu 14" laptop) is (Geekbench) 3091/14046, so the base i5-12400F (PC3600 RAM, even though it's labelled as PC4400 RAM) is about 72% of the M3 Pro's speed per core, and about 69% of the M3 Pro's speed with all cores compared.  
+* Cinebench scores are close with what I see online.
+*   ![274724934-aa847776-4faf-4ab0-9878-d29f6c8ddcae](https://user-images.githubusercontent.com/4536776/274724934-aa847776-4faf-4ab0-9878-d29f6c8ddcae.png)
 
 **Addendum:  6900 Configuration**
 
