@@ -3,7 +3,7 @@ Hackintosh Information for Gigabyte B660M Elite AX motherboard and MacOS 15+
 
 * Note: Update frequency will change, as I've acquired a MBP14" M3P that will replace this machine.  I'll leave this up for a bit to help the community, but updates might be slower. 
 
-****Hackintosh EFI Information for Gigabyte B660M Elite AX and i5-12400F - Fully working, OC1.02+, MacOS15.0+****
+****Hackintosh EFI Information for Gigabyte B660M Elite AX and i5-12400F - Fully working, OC1.03+, MacOS15.2+****
 
 Motherboard:  https://www.gigabyte.com/Motherboard/B660M-AORUS-ELITE-AX-DDR4-rev-1x#kf
 
@@ -15,11 +15,11 @@ Initial release, 10.12.2023; mild changes November 12, 2023 with newer BIOS conf
 
 **Credits**
 
-Most content was sourced from my Asrock B660M HDV writeup.  Please see that for background details.  New stuff:  USB mapping.  Intel BT/Wifi.  Updates to OC95.  Note:  YOU must update to OC1.02 prior to using.  Keep it updated!  See my OC update guide for help.  
+Most content was sourced from my Asrock B660M HDV writeup.  Please see that for background details.  New stuff:  USB mapping.  Intel BT/Wifi.  Updates to OC95.  Note:  YOU must update to OC1.03 prior to using this.  Keep it updated!  See my OC update guide for help.  
 
 **Tested macOS**
 
-* OC1.02+ and Sonoma 15.0+ is the only focus of current testing.  
+* OC1.03+ and Sonoma 15.2+ is the only focus of current testing.  
 
 **Hardware**
 
@@ -79,7 +79,7 @@ You will need to do the following:
 
 Technically, you are now done.  You should be able to boot MacOS using the USB stick, and install MacOS onto your SSD.  That said, I usually suggest configuring it a bit *after* you boot into MacOS for the first time with the right serials and ROM info: 
 
-* Download OCAT https://github.com/ic005k/QtOpenCoreConfig and open it.  Read the tooltips showing what all the icons at the top do.  Update to the latest OCAT version by finding the update button and updating.  Don't continue until you've done this.  Run the latest OCAT version.  As of last edit, OC1.02 is current and fully working.  Over the course of time further updates will be required.  Become familiar with how to pull the latest OCxx release and KEXT updates from within OCAT 'into' your EFI configuration; you will do this a lot.  
+* Download OCAT https://github.com/ic005k/QtOpenCoreConfig and open it.  Read the tooltips showing what all the icons at the top do.  Update to the latest OCAT version by finding the update button and updating.  Don't continue until you've done this.  Run the latest OCAT version.  As of last edit, OC1.03 is current and fully working.  Over the course of time further updates will be required.  Become familiar with how to pull the latest OCxx release and KEXT updates from within OCAT 'into' your EFI configuration; you will do this a lot.  
 * Open your USB stick's config.plist by using OCAT's OPEN icon.
 * In OCAT, notice the row of icons on the left side.  Go to "PI" on the row. 
 * Let's generate a new serial.  Ensure, under the GENERIC tab, that for "SystemProductName" you have the MacPro7,1.  Then click GENERATE right next to the MacPro7,1 box.  Your serial numbers are now set up.
@@ -99,17 +99,15 @@ Now let's fix your MAC address (ROM)
 * Assuming no other issues, your setup is now complete!   
 * Restart, press the appropriate key at the boot screen so you can choose a boot disk, and boot from the USB stick (select the uEFI option if prompted).  You'll then be able to step through installation of MacOS.  You'll need to format your SSD as APFS or HFS+ (APFS is the new one; use that).  Name the newly formatted SSD something like **MacSSD** so you know that's what you'll boot from in the future.  Then you can start setup.  
 * Once setup is done, use EFIAgent to copy the USB stick's EFI folder, with your serial number modifications, to the SSD's EPS (EFI) partition, and then you'll be able to boot from that disk (and you won't need the USB stick anymore, but keep it forever as a backup!). **Do note**:  Until you've copied the EFI folder from your USB stick to your SSD's EPS (EFI) partition, you must continue to boot into your USB stick before booting into MacOS.  Once you've copied the USB stick's EFI folder to the EPS (EFI) partition on the SSD, then you'll no longer need to use the USB stick to boot, and you'll just boot from the SSD's EPS (EFI) partition. 
-* Versioning on this zipfile is OC95.  Future versions, if required, would have higher numbers so it is easier to see what version you have.  Keep the zipfile (name, at least) around so you know what version you have. **You need to update to the latest OpenCore, currently 1.02, prior to use with MacOS 15.**   
+* Versioning on this zipfile is OC95.  Future versions, if required, would have higher numbers so it is easier to see what version you have.  Keep the zipfile (name, at least) around so you know what version you have. **You need to update to the latest OpenCore, currently 1.03, prior to use with MacOS 15.2.**   
 * You can clean up logs and logging / bootup, if you wish, once you have everything sorted.  Doritania's guide has a post-install cleanup section with good details on that.  In the zip, logging is fully enabled, so that if there's a problem you can take a video of the screen on your phone and troubleshoot based on that.
 * Use OCAuxiliaryTools to update to later OpenCore releases.  Use MacOS's built-in update mechanism to update MacOS releases.  
 * Otherwise, please leave comments/issues here. 
 
 **Benchmark Expectations**
 
-![img](https://private-user-images.githubusercontent.com/4536776/377123674-a5fcc800-c0b5-461e-a7cb-cd5e32e4d027.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjkwOTI4OTQsIm5iZiI6MTcyOTA5MjU5NCwicGF0aCI6Ii80NTM2Nzc2LzM3NzEyMzY3NC1hNWZjYzgwMC1jMGI1LTQ2MWUtYTdjYi1jZDVlMzJlNGQwMjcucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MTAxNiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDEwMTZUMTUyOTU0WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9OWYxMTA4ZDY0Yzk5MjBiMWUzZTBhODdhYmNlNTY5ZDRhN2JiNzdlOTViNmIwM2U0NzBlNzhlZWQ3YTVlODYxYSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.0LGq2nM5AZM-v_dYIrd-bDolcLaqyAKnzOCRmA5EJI4)
-
 * With BIOS F30 and PC3600 RAM, in MacOS15.01, I get 2224/9656 in GeekBench 6.30.    
-* A typical M3 Pro MBP 14" base (the $1849 Edu 14" laptop) is (Geekbench) 3091/14046, so the base i5-12400F (PC3600 RAM, even though it's labelled as PC4400 RAM) is about 72% of the M3 Pro's speed per core, and about 69% of the M3 Pro's speed with all cores compared.  
+* A typical M4 base $499 [Edu] mini is (Geekbench) 3678/14678, so the base i5-12400F (PC3600 RAM, even though it's labelled as PC4400 RAM) is about 60% of the M4's speed per core, and about 66% of the M4's speed with all cores compared.  
 * Cinebench scores are close with what I see online.
 *   ![274724934-aa847776-4faf-4ab0-9878-d29f6c8ddcae](https://user-images.githubusercontent.com/4536776/274724934-aa847776-4faf-4ab0-9878-d29f6c8ddcae.png)
 
